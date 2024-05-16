@@ -5,9 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers;
 
-[ApiController]
-[Route("api/[controller]")]   //api/user(UserController)
-public class UserController : ControllerBase
+public class UserController : BaseAPIController
 {
     private readonly DataContext _context;
 
@@ -22,7 +20,7 @@ public class UserController : ControllerBase
         var users = await _context.Users.ToListAsync();
         return users;
     }
-    [HttpGet("{id}")]   //api/user/2
+    [HttpGet("{id}")]   // http://localhost:9090/api/user/2  
     public async Task<ActionResult<AppUser>> GetUser(int id)
     {
         //all tables/db inside context

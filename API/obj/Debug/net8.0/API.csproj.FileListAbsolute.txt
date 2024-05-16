@@ -133,12 +133,6 @@ C:\Users\Laptop\Desktop\OtherStuff\Online Dating Application\API\bin\Debug\net8.
 C:\Users\Laptop\Desktop\OtherStuff\Online Dating Application\API\bin\Debug\net8.0\Client\tsconfig.spec.json
 C:\Users\Laptop\Desktop\OtherStuff\Online_Dating_Application\api\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Laptop\Desktop\OtherStuff\Online_Dating_Application\api\bin\Debug\net8.0\appsettings.json
-C:\Users\Laptop\Desktop\OtherStuff\Online_Dating_Application\api\bin\Debug\net8.0\Client\angular.json
-C:\Users\Laptop\Desktop\OtherStuff\Online_Dating_Application\api\bin\Debug\net8.0\Client\package-lock.json
-C:\Users\Laptop\Desktop\OtherStuff\Online_Dating_Application\api\bin\Debug\net8.0\Client\package.json
-C:\Users\Laptop\Desktop\OtherStuff\Online_Dating_Application\api\bin\Debug\net8.0\Client\tsconfig.app.json
-C:\Users\Laptop\Desktop\OtherStuff\Online_Dating_Application\api\bin\Debug\net8.0\Client\tsconfig.json
-C:\Users\Laptop\Desktop\OtherStuff\Online_Dating_Application\api\bin\Debug\net8.0\Client\tsconfig.spec.json
 C:\Users\Laptop\Desktop\OtherStuff\Online_Dating_Application\api\bin\Debug\net8.0\API.exe
 C:\Users\Laptop\Desktop\OtherStuff\Online_Dating_Application\api\bin\Debug\net8.0\API.deps.json
 C:\Users\Laptop\Desktop\OtherStuff\Online_Dating_Application\api\bin\Debug\net8.0\API.runtimeconfig.json
@@ -264,3 +258,4 @@ C:\Users\Laptop\Desktop\OtherStuff\Online_Dating_Application\api\obj\Debug\net8.
 C:\Users\Laptop\Desktop\OtherStuff\Online_Dating_Application\api\obj\Debug\net8.0\API.pdb
 C:\Users\Laptop\Desktop\OtherStuff\Online_Dating_Application\api\obj\Debug\net8.0\API.genruntimeconfig.cache
 C:\Users\Laptop\Desktop\OtherStuff\Online_Dating_Application\api\obj\Debug\net8.0\ref\API.dll
+C:\Users\Laptop\Desktop\OtherStuff\Online_Dating_Application\API\obj\Debug\net8.0\API.sourcelink.json
