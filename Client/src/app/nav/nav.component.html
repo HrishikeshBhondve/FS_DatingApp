@@ -1,0 +1,47 @@
+<p>nav works!</p>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/" routerLinkActive="active">DatingApp</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ng-container>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/members" routerLinkActive="active">Matches</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/lists" routerLinkActive="active">Lists</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " routerLink="/messages" routerLinkActive=" active">Messages</a>
+                    </li>
+                </ng-container>
+                <li class="nav-item">
+                    <a class="nav-link " routerLink="/errors" routerLinkActive=" active">Error</a>
+                </li>
+                <li class="nav-item" (click)="logout()">
+                    <a class="nav-link disabled">Logout</a>
+                </li>
+            </ul>
+            <div class="dropDown" *ngIf="(accountService.currentUser$ | async) as User" dropdown>
+                <a href="" class="dropdown-toggle text-light text-decoration-none" dropdownToggle>Welcome
+                    {{User.username | titlecase}} </a>
+                <div class="dropdown-menu" *dropdownMenu>
+                    <a class="dropdown-item text-light">Edit Profile</a>
+                    <a class="dropdown-item text-light" (click)="logout()">Logout</a>
+                </div>
+            </div>
+            <form *ngIf="!(accountService.currentUser$ | async)" #loginForm="ngForm" class="d-flex" (ngSubmit)="login()"
+                autocomplete="off">
+                <input name="username" [(ngModel)]="model.username" class="form-control me-2" type="text"
+                    placeholder="UserName" aria-label="Search">
+                <input name="password" [(ngModel)]="model.password" class="form-control me-2" type="password"
+                    placeholder="Password" aria-label="Search">
+                <button class="btn btn-success" type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</nav>
